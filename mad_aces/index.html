@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mad Aces</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.3.11/slick.css"/>
+</head>
+<body>
+<div id="top">
+  <div class="appstore">
+    <a target="_blank" href="https://itunes.apple.com/app/mad-aces/id1054325910"><img src="images/app-store.png"></a>
+    <a href="https://play.google.com/store/apps/details?id=com.bulkypix.madaces" target="_blank"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge-border.png" height="55" /></a>
+  </div>
+</div>
+<div id="content">
+  <div class="section white">
+    <div class="title">Join Mad Aces on their most epic flight yet!</div>
+    <div class="wrapper subtext">
+      Mad Aces is one of the fastest, toughest and most exhilarating runner out there! Fly across the dangerous space, ramming and dodging spiked bricks, discovering new ridiculous characters!
+    </div>
+  </div>
+
+  <div class="section gray">
+    <div class="title">Meet Mad Aces</div>
+    <div class="wrapper">
+      <iframe src="https://www.youtube.com/embed/b7mNpDl_5l0" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="section white">
+    <div class="wrapper center">
+      Extremely addictive “just one more time” gameplay!
+      <br><br>
+     You control one of the mad aces as he flies, dodges, rams, blasts, and more!
+	 <br><br>
+     Mad Aces is not press-X-to-win kind of game. It's the game, where your skills and reaction are going to be severely tested.
+      <br><br>
+     With exciting retro-game-inspired mechanics, simple but challenging gameplay you can run through the endless level and strive for the best score!
+    </div>
+  </div>
+
+  <div class="section gray">
+    <div class="title">Join the adventure</div>
+    <div class="wrapper">
+      <div class="slider">
+        <div><img src="images/screenshots/scr_1.jpeg"></div>
+        <div><img src="images/screenshots/scr_2.jpeg"></div>
+        <div><img src="images/screenshots/scr_3.jpeg"></div>
+        <div><img src="images/screenshots/scr_4.jpeg"></div>
+        <div><img src="images/screenshots/scr_5.jpeg"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section white">
+    <div class="title">Key features</div>
+    <div class="wrapper">
+      <ul>
+        <li>Easy to learn - hard to master game mechanics</li>
+        <li>Ridiculous and expanding character roster</li>
+        <li>Game Center Achievements</li>
+        <li>Distinguished visuals</li>
+        <li>...and even more to come</li>
+      </ul>
+
+      <div class="store">
+        <a target="_blank" href="https://itunes.apple.com/app/mad-aces/id1054325910"><img src="images/app-store.png"></a>
+        <a href="https://play.google.com/store/apps/details?id=com.bulkypix.madaces" target="_blank"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" height="50" /></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section gray">
+    <div class="wrapper">
+      <div class="footer">
+        <a href="/">Home</a>
+
+        <a href="/privacy_policy.html">Privacy Policy</a>
+        <a href="mailto:support@carpazzzi.com?subject=Support Mad Aces">Support</a>
+        <br>
+        Carpazzzi Soft &copy; 2015
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.3.11/slick.min.js"></script>
+<script type="text/javascript">
+  function set_iframe_height() {
+    var iframe_width = $('iframe').width();
+    $('iframe').css('height', iframe_width / 16 * 9);
+  }
+
+  $(document).ready(function(){
+    $('#content .slider').slick({
+      centerMode: true,
+      infinite: false
+    });
+
+    set_iframe_height();
+
+    $('#top .logotype a.click').on("click", function(e) {
+      e.preventDefault();
+      $("html, body").animate({
+        scrollTop: $("#content").offset().top - 40
+      });
+    });
+  });
+
+  $(window).on("resize", function() {
+    set_iframe_height();
+  });
+</script>
+</body>
+</html>

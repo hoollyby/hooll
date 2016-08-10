@@ -1,0 +1,255 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+#top {
+  width: 100%;
+  height: 90%;
+  background-image: url('images/back5.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#top .logotype {
+  position: absolute;
+  top: 50%;
+  width: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  line-height: 0;
+}
+
+#top .logotype img {
+  width: 100%;
+}
+
+#top .logotype .click {
+  display: block;
+  width: 22%;
+  height: 37%;
+  position: absolute;
+  left: 29%;
+  bottom: 17%;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+#top .appstore {
+  position: absolute;
+  right: 10%;
+  bottom: 50px;
+  line-height: 0px;
+}
+
+#top .appstore a {
+  display: inline-block;
+}
+
+#content {
+  width: 100%;
+  height: auto;
+  color: #263754;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+#content .section {
+  position: relative;
+  padding: 60px 0px 80px;
+}
+
+#content .section .subtext {
+  text-align: center;
+}
+
+.section:before {
+  content: '';
+  width: 100%;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: -19px;
+  left: 0px;
+  background-size: auto 100%;
+  background-position: center bottom;
+  background-repeat: repeat-x;
+}
+
+.section.white {
+  background: #ffffff;
+}
+
+.section.white:before {
+  background-image: url('images/wave-white.png');
+}
+
+.section.gray {
+  background: #f3f3f3;
+}
+
+.section.gray:before {
+  background-image: url('images/wave-gray.png');
+}
+
+.section:last-of-type {
+  padding-bottom: 60px !important;
+}
+
+.section .wrapper {
+  width: 60%;
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
+}
+
+.section .title {
+  font-size: 28px;
+  font-weight: 700;
+  width: 75%;
+  max-width: 1150px;
+  margin: 0 auto 35px !important;
+  display: block;
+  text-align: center;
+}
+
+.section a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section .store {
+  display: block;
+  text-align: center;
+  margin: 80px 0 40px !important;
+}
+
+.section iframe {
+  width: 100%;
+  display: block;
+}
+
+.section ul {
+  list-style: none;
+}
+
+.section ul li {
+  margin: 15px 0;
+  display: block;
+  line-height: 20px;
+}
+
+.section ul li:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 31px;
+    height: 29px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-image: url('images/ss.png');
+    margin-top: -2px;
+    margin-right: 12px;
+}
+
+.section ul li:nth-of-type(6n+1):before
+{
+  background-position: 2px 0px;
+}
+
+.section ul li:nth-of-type(6n+2):before
+{
+  background-position: -37px 0px;
+}
+
+.section ul li:nth-of-type(6n+3):before
+{
+  background-position: -82px 0px;
+}
+
+.section ul li:nth-of-type(6n+4):before
+{
+  background-position: -126px 0px;
+}
+.section ul li:nth-of-type(6n+5):before
+{
+  background-position: 2px 0px;
+}
+
+.section ul li:nth-of-type(6n+6):before
+{
+  background-position: -37px 0px;
+}
+
+.section ul li:nth-of-type(6n+7):before
+{
+  background-position: -82px 0px;
+}
+
+.section ul li:nth-of-type(6n+8):before
+{
+  background-position: -126px 0px;
+}
+
+.section .footer {
+  font-size: 13px;
+  color: #606060;
+  text-align: center;
+}
+
+.section .footer a {
+  margin: 0 5px;
+  color: #606060;
+  text-decoration: underline;
+}
+
+.slick-prev {
+  left: -50px !important;
+}
+
+.slick-next {
+  right: -50px !important;
+}
+
+.slick-prev, .slick-next {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.slick-prev::before, .slick-next::before {
+  color: #000000 !important;
+  font-size: 40px !important;
+}
+
+.slick-slide {
+  margin: 0 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+  height: auto !important;
+}
+.center {
+	text-align:center;
+}
+@media only screen and (orientation: portrait) {
+  #top {
+    height: 60%;
+  }
+}

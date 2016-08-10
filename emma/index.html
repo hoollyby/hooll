@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Emma's World</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.css"/>
+</head>
+<body>
+<div id="top">
+  <div class="logotype">
+    <img src="images/logo.png">
+    <a href="#" class="click"></a>
+  </div>
+  <div class="appstore"><a target="_blank" href="http://itunes.com/apps/emmasworld"><img src="images/app-store.png"></a></div>
+</div>
+<div id="content">
+  <div class="section white">
+    <div class="title">Reignite your childhood imagination through the eyes of Emma!</div>
+    <div class="wrapper">
+      Emma's World is an ingenious, fast-paced arcade game for players of all ages. Armed only with a slingshot, a pile of paintballs and a lively imagination, Emma bravely makes her way through her fantasy world, defeating enemies and saving the day.
+    </div>
+  </div>
+
+  <div class="section gray">
+    <div class="title">Meet Emma</div>
+    <div class="wrapper">
+      <iframe src="//www.youtube.com/embed/6VQuTiTvDhY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="section white">
+    <div class="wrapper">
+      Left home alone and with nothing to do, Emma's vivid imagination begins to blossom, creating whole new scenes and characters inside her house. When monsters start invading, Emma and her ragdoll toy Sam must send the monsters back from where they came.
+      <br><br>
+      Emma's world is an addictive adventure and is immediately popular with any arcade fan - simply change the colour of the monsters in the chain by shooting paintballs at them, forcing them back into the portals.
+      <br><br>
+      Emma's World features 50 levels, all completely free!
+      <br><br>
+      Entering the fantasy world inside Emma's imagination is sure to brighten anyone's day, with cute characters and gorgeous, stylistic visuals throughout.
+    </div>
+  </div>
+
+  <div class="section gray">
+    <div class="title">Join the adventure</div>
+    <div class="wrapper">
+      <div class="slider">
+        <div><img src="images/screenshots/1.jpg"></div>
+        <div><img src="images/screenshots/2.jpg"></div>
+        <div><img src="images/screenshots/3.jpg"></div>
+        <div><img src="images/screenshots/4.jpg"></div>
+        <div><img src="images/screenshots/5.jpg"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section white">
+    <div class="title">Key features</div>
+    <div class="wrapper">
+      <ul>
+        <li>Addictive gameplay, with hours of fun at your fingertips</li>
+        <li>Beautiful and charming visuals</li>
+        <li>Accessible for all ages</li>
+        <li>Creatively designed levels, growing in difficulty as the game progresses</li>
+        <li>Challenge your friends and earn new medals by connecting to Facebook</li>
+        <li>Automatically synchronises with all iOS devices</li>
+      </ul>
+
+      <div class="store">
+        <a target="_blank" href="http://itunes.com/apps/emmasworld"><img src="images/app-store.png"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section gray">
+    <div class="wrapper">
+      <div class="footer">
+        <a href="/">Home</a>
+        <a href="/press_kit_emmas_world.zip">Press Kit</a>
+        <a href="/privacy_policy.html">Privacy Policy</a>
+        <a href="mailto:support@carpazzzi.com?subject=Support Emma's World">Support</a>
+        <br>
+        Carpazzzi Soft &copy; 2014
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#content .slider').slick({
+      centerMode: true,
+      infinite: false
+    });
+
+    $('#top .logotype a.click').on("click", function(e) {
+      e.preventDefault();
+      $("html, body").animate({
+        scrollTop: $("#content").offset().top - 40
+      });
+    });
+  });
+</script>
+</body>
+</html>
