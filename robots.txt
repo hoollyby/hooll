@@ -3,4 +3,4 @@ Disallow: /css/
 Disallow: /img/
 Disallow: /js/
 Disallow: /old/
-Host: carpazzzi.com
+Host: olion.by
